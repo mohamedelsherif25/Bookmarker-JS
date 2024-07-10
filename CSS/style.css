@@ -1,0 +1,54 @@
+/*
+Fonts : 
+ font-family: "Pacifico", cursive;
+ font-family: "Righteous", sans-serif;
+ font-family: "PT Sans Caption", sans-serif;
+*/
+
+body {
+  background-color: #f7ecde;
+}
+
+/* title */
+.row .col-12 .title {
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+  font-weight: 500;
+  color: #352e28;
+  position: relative;
+  z-index: 1;
+}
+.row .col-12 .title::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 35%;
+  left: 0;
+  bottom: 0;
+  background-color: #fec260;
+  z-index: -1;
+  transition: 0.5s;
+}
+.row .col-12 .title:hover::before {
+  height: 70%;
+}
+.bookmark-heading,
+.col-12 .py-4 {
+  border-bottom: 2px dotted black;
+}
+/* title */
+.col-12 h2 {
+  font-family: "Righteous", cursive;
+  font-size: 25px;
+  font-weight: 500;
+}
+.col-12 .inputs,
+#report {
+  font-family: "PT Sans Caption", sans-serif;
+}
+.inputs p,
+.heading p {
+  font-family: "PT Sans Caption", sans-serif;
+  font-weight: 600;
+  color: #212529;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="shortcut icon" href="bookmark.png" type="image/x-icon" />
+    <title>Bookmark</title>
+  </head>
+  <body>
+    <div id="book-mark" class="vh-100">
+      <div class="container py-5">
+        <!-- heading and inputs -->
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex justify-content-center bookmark-heading">
+              <h1 class="title text-center mb-5">Bookmarker</h1>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="py-4">
+              <h2 class="text-center text-success">
+                <i class="fa-solid fa-bookmark pe-2 text-warning"></i>Bookmark
+                your favorite sites<i
+                  class="fa-solid fa-bookmark ps-2 text-warning"
+                ></i>
+              </h2>
+              <div class="inputs">
+                <div class="mb-4">
+                  <p class="m-0 pb-2">
+                    <i class="fa-solid fa-book-bookmark pe-2"></i> Site Name
+                  </p>
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Bookmark Name"
+                    id="book-name"
+                  />
+                </div>
+                <div class="mb-4">
+                  <p class="m-0 pb-2">
+                    <i class="fa-solid fa-link pe-1"></i> Site URL
+                  </p>
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Website URL"
+                    id="website-url"
+                  />
+                </div>
+                <div class="text-center">
+                  <button
+                    type="submit"
+                    class="btn btn-danger px-5"
+                    onclick="addInputs()"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- heading and inputs -->
+        <!-- display heading -->
+        <div class="row mt-4 g-0 bg-white text-center heading">
+          <div class="col-3"><p class="my-2">Index</p></div>
+          <div class="col-3"><p class="my-2">Website Name</p></div>
+          <div class="col-3"><p class="my-2">Visit</p></div>
+          <div class="col-3"><p class="my-2">Delete</p></div>
+        </div>
+        <!-- display heading -->
+        <!-- display information -->
+        <div class="row g-0 bg-white text-center" id="report"></div>
+      </div>
+      <!-- display information -->
+    </div>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
+</html>
